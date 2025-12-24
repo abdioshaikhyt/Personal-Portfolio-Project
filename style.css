@@ -160,14 +160,15 @@ body {
   }
 
   .footer {
-    padding: 50p 25px;
+  padding: 60px 25px;
     text-align: center;
   }
 
   .footer h2 {
-   
+    padding-bottom: 30px;
     margin-top: 0;
-    
+    display:block;
+    font-family: 'Jost', sans-serif;
   }
 
   .footer img {
@@ -175,14 +176,27 @@ body {
     height:auto;
     display: inline-block;
     margin-right: 25px;
+    margin: 0 100px;
+  }
+
+  .social-links {
+    margin-top: 40px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .social-links a:hover img {
+    transform: scale(1.2); 
+    opacity: 0.7; 
+    transition: all 0.3s ease;
+  }
+
+  .footer .copyright {
+    margin-top: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
     
-  }
-
-  .github-svg {
-
-   
-  }
-
-  .linkedin-svg {
-  
   }
