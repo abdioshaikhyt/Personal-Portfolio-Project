@@ -76,6 +76,8 @@ body {
     background-size: 100% 200%;
     animation: gradientShift 4s linear infinite alternate;
   }
+
+
   .Hero h2 {
       font-size: 32px;
   }
@@ -89,13 +91,14 @@ body {
     border: #707070 solid 1px;
     margin-top: 40px;
     margin-bottom: 7.5vw;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
   }
 
 
   .Hero button:active {
-    transform:translateY(6px);
-    transition: all 0.4s linear;
+     transform: translateY(-2px);
+  transition: all 0.2s ease;
+
   }
   .Hero button:hover {
     background-color:#fff;
@@ -106,17 +109,18 @@ body {
 
   }
 
-  .Hero .language-icon {
+  .Hero .language-icons {
     width: 80px;
     height: 80px;
-    margin: 10px;
+    margin: 20px;
     object-fit: contain;
     mix-blend-mode: multiply;
     filter: contrast(1.1);
     transition: all 0.3s ease;
+    padding: 1vw;
   }
 
-  .Hero .language-icon:hover {
+  .Hero .language-icons:hover {
     transform: scale(1.1);
   }
   
