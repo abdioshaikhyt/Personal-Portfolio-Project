@@ -104,15 +104,18 @@ body {
 }
   .Hero button {
     background-color: #8A8A8A;
-    border-radius: 4px;
-    padding: 15px 30px;
+    border: 2px solid #707070;
+    border-radius: 50px;
+    padding: 16px 32px;
     font-family: 'Jost', sans-serif;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.3);
-    color: #fff;
-    border: #707070 solid 1px;
-    margin-top: 50px;
-    margin-bottom: 7.5vw;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
   }
 
 
@@ -122,11 +125,10 @@ body {
 
   }
   .Hero button:hover {
-    background-color:#fff;
-    color:black;
-    border: #fff solid 1px;
-    transition: all 0.4s ease-in;
-    cursor: pointer;
+    background-color: #707070;
+  border-color: #8A8A8A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
   }
 
@@ -311,4 +313,86 @@ padding-top: 1vw;
   padding-top: 5vw;
   font-family: 'Jost', sans-serif;
   font-size: 1.1rem;
+}
+
+.email-form-container {
+  margin: 40px 0;
+}
+
+.email-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-input {
+  padding: 16px 24px;
+  border: 2px solid #8A8A8A;
+  border-radius: 50px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 200px;
+}
+
+.email-input::placeholder {
+  color: #999;
+  font-weight: 300;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #707070;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.email-submit-btn {
+  background-color: #8A8A8A;
+  border: 2px solid #707070;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.email-submit-btn:hover {
+  background-color: #707070;
+  border-color: #8A8A8A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.email-submit-btn:active {
+  transform: translateY(0);
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .email-form {
+    flex-direction: column;
+  }
+  
+  .email-input {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .email-submit-btn {
+    width: 100%;
+  }
 }
