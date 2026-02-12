@@ -279,3 +279,11 @@ body {
   transform: translateY(0);
 }
   
+.copyright { 
+padding-top: 1vw;
+}
+.more {
+  padding-top: 5vw;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.1rem;
+}
